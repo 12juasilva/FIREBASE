@@ -1,20 +1,23 @@
-<p>register works!</p>
-<form (ngSubmit)="submitForm()">
-  <label for="id">ID</label>
-  <input type="text" id="id" name="id" (ngModel)="profileUser.id" />
+<div class="card flex justify-content-center">
+  <form (ngSubmit)="onSubmit()">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" [(ngModel)]="profileUser.email">
 
-  <label for="email">Email</label>
-  <input type="text" id="email" name="email" (ngModel)="profileUser.email" />
-  <label for="firstName">Nombre </label>
-  <input type="text" id="firstName" name="firstName" (ngModel)="profileUser.firstName" />
-  <label for="lastName">Apellidos</label>
-  <input type="text" id="lastName" name="lastName" (ngModel)="profileUser.lastName" />
-  <label for="phone">Telefono</label>
-  <input type="text" id="phone" name="phone" (ngModel)="profileUser.phone" />
-  <label for="address">Contraseña</label>
-  <input type="text" id="address" name="address" (ngModel)="profileUser.address" />
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" [(ngModel)]="profileUser.firstName">
 
-  <!-- Repite para otros campos -->
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" [(ngModel)]="profileUser.lastName">
 
-  <button type="submit">Guardar</button>
-</form>
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" [(ngModel)]="profileUser.phone">
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" [(ngModel)="profileUser.address">
+
+    <label for="rol">Role:</label>
+    <input type="text" id="rol" name="rol" [(ngModel)]="profileUser.rol">
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

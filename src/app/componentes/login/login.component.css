@@ -1,0 +1,33 @@
+.login-container {
+    background-color: black;
+    height: 100vh; /* Establece la altura al 100% del viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+  }
+  
+  .p-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  .p-text-center {
+    text-align: center;
+  }
+  
+  .p-mt-3 {
+    margin-top: 1.5rem !important; /* Agrega margen superior al enlace de registro */
+  }
