@@ -1,0 +1,20 @@
+<p>register works!</p>
+<form (ngSubmit)="submitForm()">
+  <label for="id">ID</label>
+  <input type="text" id="id" name="id" (ngModel)="profileUser.id" />
+
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email" (ngModel)="profileUser.email" />
+  <label for="firstName">Nombre </label>
+  <input type="text" id="firstName" name="firstName" (ngModel)="profileUser.firstName" />
+  <label for="lastName">Apellidos</label>
+  <input type="text" id="lastName" name="lastName" (ngModel)="profileUser.lastName" />
+  <label for="phone">Telefono</label>
+  <input type="text" id="phone" name="phone" (ngModel)="profileUser.phone" />
+  <label for="address">Contraseña</label>
+  <input type="text" id="address" name="address" (ngModel)="profileUser.address" />
+
+  <!-- Repite para otros campos -->
+
+  <button type="submit">Guardar</button>
+</form>

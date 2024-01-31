@@ -1,0 +1,32 @@
+<p>login works!</p>
+
+<div class="container">
+  <h2>Login</h2>
+  <div class="login-container">
+    <div class="login-box p-shadow-6">
+      <h2>Login</h2>
+      <form (ngSubmit)="onSubmit()">
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-user"></i>
+          </span>
+          <input type="text" id="username" name="username" [(ngModel)]="user.username" pInputText required>
+        </div>
+  
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-lock"></i>
+          </span>
+          <input type="password" id="password" name="password" [(ngModel)]="user.password" pPassword required>
+        </div>
+  
+        <div class="form-group">
+          <button type="submit" pButton label="Login" class="p-button-success"></button>
+        </div>
+      </form>
+  
+      <div class="additional-info">
+        <p>Don't have an account? <a (click)="navigateToRegister()">Register here</a>.</p>
+      </div>
+    </div>
+  </div>

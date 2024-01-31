@@ -16,5 +16,6 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 
 export class AppComponent {
+  
   title = 'angular-primeng-auth';
 }
